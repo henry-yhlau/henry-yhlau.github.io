@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry The Nth</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="sakura_base.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<!-- The page content should cover 95% of the viewport width (i.e., the width of
+the browser window). However, the content width should be limited to 1,024 pixels -->
+
+<!-- https://unsplash.com/photos/white-and-brown-robot-toy-d0oYF8hm4GI?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash -->
+
+<body>
+    <div id="back_to_top" class="flex flex_center">
+        <span class="material-symbols-outlined">
+            upgrade
+        </span>
+        <a id="back_to_top_href" href="#navbar">Back To Top</a>
+    </div>
+    <nav id="navbar" class="flex">
+        <a href="#about_me">About Me</a>
+        <a href="#edu">Education</a>
+        <a href="#contact_form">Contact Me</a>
+    </nav>
+    <section id="top" class="flex flex_center">
+        <div class="avatar">
+            <img src="https://images.unsplash.com/photo-1620428268482-cf1851a36764?q=80&w=1709&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="logo">
+        </div>
+        <h1>Henry Lau</h1>
+        <h3>Software Engineer</h3>
+        <div class="btn_grp flex flex_center">
+            <div class="btn_flex flex" id="download">
+                <span class="material-symbols-outlined">cloud_download</span>
+                Resume
+            </div>
+            <div class="btn_flex flex">
+                <span class="material-symbols-outlined">
+                    communication
+                </span>
+                <a id="btn_contact_me" href="#contact_form">Contact Me</a>
+            </div>
+        </div>
+    </section>
+    <section id="about_me" class="flex">
+        <div id="info" class="about_item card">
+            <h3>About Me and Academic Honesty</h3>
+            <p>I am Henry from Hong Kong, currently a student in Seneca Polytechnic studying a diploma in Computer
+                Programming. Love to watch NBA, Oklahoma City Thunder is my favourite team.</p>
+            <p>I declare that my assignment is wholly my own work in accordance with Seneca Academic
+                Policy. No part of this assignment has been copied manually or electronically from any
+                other source (including web sites) except for the information supplied by the WEB222
+                instructors and / or made available in this assignment for my use.</p>
+            <p>I also declare that no part of this assignment has been distributed to other students.</p>
+            <div>
+                <b>Date: </b>
+                <span>Apr 14, 2024</span>
+            </div>
+        </div>
+        <div id="facts" class="about_item card">
+            <h3>Basic Information</h3>
+            <div class="flex">
+                <strong class="about_item">AGE:</strong>
+                <p class="about_item">31</p>
+            </div>
+            <div class="flex">
+                <strong class="about_item">EMAIL:</strong>
+                <p class="about_item">yhlau3@myseneca.ca</p>
+            </div>
+            <div class="flex">
+                <strong class="about_item">LANGUAGE:</strong>
+                <p class="about_item">English, Cantonese, Mandarin</p>
+            </div>
+            <div class="flex">
+                <strong class="about_item">SECTION:</strong>
+                <p class="about_item">ZCC</p>
+            </div>
+            <div class="flex">
+                <strong class="about_item">INSTRUCTOR:</strong>
+                <p class="about_item">Mr. Mark-Anthony Meritt</p>
+            </div>
+        </div>
+    </section>
+    <section id="edu" class="flex">
+        <h3>Education</h3>
+        <div class="edu_row flex flex_center">
+            <div class="edu_left">
+                <p>Fall 2023 - Winter 2025(expected)</p>
+                <h5 class="edu_tier">Diploma</h5>
+            </div>
+            <div class="edu_right">
+                <h3>Diploma</h3>
+                <h5>Seneca Polytechnic</h5>
+                <p>Computer Programming</p>
+            </div>
+        </div>
+        <div class="edu_row flex flex_center">
+            <div class="edu_left">
+                <p>Fall 2013 - Winter 2017</p>
+                <h5 class="edu_tier">Bachelor's Degree</h5>
+            </div>
+            <div class="edu_right">
+                <h3>Bachelor's Degree</h3>
+                <h5>Hong Kong Metropolitan University</h5>
+                <p>BSc in Environmental Science</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact_form" class="flex flex_center">
+        <h3>Contact Me</h3>
+        <div class="form card">
+            <form action="https://httpbin.org/post" method="post" id="form">
+                <fieldset>
+                    <legend>Name <span class="req_field">＊ Required</span></legend>
+                    <input type="text" id="name" class="input_borderless">
+                    <div id="name_text_helper" class="req_field">Please Input Your Name.</div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Email <span class="req_field">＊ Required</span></legend>
+                    <input type="text" id="email" class="input_borderless">
+                    <div id="email_text_helper" class="req_field">Please Input Your Email.</div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Address</legend>
+                    <input type="text" id="address" class="input_borderless">
+                </fieldset>
+
+                <fieldset>
+                    <legend>City</legend>
+                    <input type="text" list="cities" id="city" name="city" class="input_borderless">
+
+                    <datalist id="cities">
+                        <option value="Toronto"></option>
+                        <option value="Quebec City"></option>
+                        <option value="Ottawa"></option>
+                        <option value="Calgary"></option>
+                        <option value="Regina"></option>
+                        <option value="Vancouver"></option>
+                        <option value="Halifax"></option>
+                        <option value="Montreal"></option>
+                        <option value="Winnipeg"></option>
+                        <option value="Other"></option>
+                    </datalist>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Postal</legend>
+                    <input type="text" id="postal" class="input_borderless"
+                        pattern="[abcefghjklmnprstvxyABCEFGHJKLMNPRSTVXY][0-9][abcefghjklmnprstvwxyzABCEFGHJKLMNPRSTVWXYZ][ ]?[0-9][abcefghjklmnprstvwxyzABCEFGHJKLMNPRSTVWXYZ][0-9]">
+                    <div id="postal_text_helper" class="req_field">Please Enter Valid Canadian Postal Code.</div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Prefered Repsoned Time</legend>
+                    <div>
+                        <input type="radio" id="morning" name="time" value="morning" checked required />
+                        <label for="morning">Morning: 08 - 12</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="noon" name="time" value="noon" />
+                        <label for="noon">Afternoon: 13 - 19</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message To Me <span class="req_field">＊ Required</span></legend>
+
+                    <div>
+                        <input type="radio" id="question" name="type" value="question" checked />
+                        <label for="question">Question</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="comment" name="type" value="comment" />
+                        <label for="comment">Comment</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="hiring" name="type" value="hiring" />
+                        <label for="hiring">Hiring</label>
+                        <input type="number" id="wage" name="wage" placeholder="Hourly Rate">
+                    </div>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                    <div id="message_text_helper" class="req_field">Please Enter Your Message.</div>
+                </fieldset>
+                <div id="btn_submit" class="flex flex_center">
+                    <div class="btn_flex flex">
+                        <span class="material-symbols-outlined">
+                            send
+                        </span>
+                        Submit
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>

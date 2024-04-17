@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    bottom: 0;
+}
+
+body {
+    width: 95vw;
+    margin: auto;
+    position: relative;
+    padding: 0 5% 0;
+    background-image: linear-gradient(#F8DADC, #EDDDD9, #E2E0D5, #D7E4D2, #CCE7CF);
+}
+
+section {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+a {
+    text-decoration:underline dotted;
+    color: inherit;
+}
+
+#back_to_top_href, #btn_contact_me {
+    text-decoration: none;
+}
+
+div#back_to_top {
+    position: fixed;
+    right: 0vh;
+    bottom: 0vh;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_center {
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.flex_vert {
+    flex-direction: column;
+}
+
+nav {
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section#top {
+    flex-direction: column;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card {
+    border: solid;
+    border-radius: 20px;
+    box-shadow: 10px 10px;
+    padding: 20px;
+    margin-top:25px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.btn_flex {
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    border: solid ;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 16px;
+    width: 150px;
+}
+
+div.btn_grp{
+    flex-direction: column;
+}
+
+.about_item {
+    flex: 0 50%;
+}
+
+section#about_me, section#edu {
+    flex-direction: column;
+}
+
+div.edu_row {
+    flex-direction: column;
+    border: solid;
+    border-radius: 20px;
+    box-shadow: 10px 10px;
+    padding: 20px;
+    margin-top:25px;
+}
+
+div.edu_left {
+    flex-direction: column;
+    width: 100%;
+}
+
+div.edu_right {
+    flex-direction: column;
+    width: 100%;
+}
+
+h5.edu_tier {
+    display: none;
+}
+
+section#contact_form {
+    flex-direction: column;
+}
+
+.form {
+    width: 100%;
+}
+
+input.input_borderless, datalist {
+    border: 0;
+    background-color: transparent;
+}
+
+#message {
+    resize: none;
+}
+  
+input:focus:invalid {
+    box-shadow: none;
+}
+
+.req_field {
+    color: #F5895C;
+}
+
+#btn_submit {
+    margin-top: 15px;
+}
+
+#name_text_helper, #email_text_helper, #message_text_helper, #wage, #postal_text_helper {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        height: auto;
+    }
+    .avatar {
+        width: 500px;
+        height: 500px;
+    }
+    section#about_me, section#edu {
+        justify-content: space-evenly;
+    }
+    body {
+        max-width: 1024px;
+    }
+    div.edu_row, div.btn_grp{
+        flex-direction: row;
+    }
+    div.edu_row {
+        padding: 0;
+        overflow: hidden;
+    }
+    div.edu_left {
+        width: 30%;
+        padding: 20px;
+    }
+    div.edu_right {
+        padding: 20px;
+        width: 70%;
+        background-color: #F9F5E0;
+    }
+    h5.edu_tier {
+        display: block;
+    }
+    div.testing1 {
+        border: solid red;
+        width: 30%;
+        height: auto;   
+    }
+    div.testing2 {
+        border: solid blue;
+        width: 70%;
+        height: 100%;
+    }
+}
