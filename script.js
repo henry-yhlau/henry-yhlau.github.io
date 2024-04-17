@@ -73,7 +73,7 @@ document.querySelectorAll('input[name="type"]').forEach((elem) => {
 document.getElementById("download").addEventListener("click", (e) => {
   const a = document.createElement("a");
   a.href = "resume.pdf";
-  a.download = true;
+  a.download = "empty_resume.pdf";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
